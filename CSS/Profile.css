@@ -1,0 +1,12 @@
+@import "UI.css";
+@import "NavBar.css";
+@import "Form.css";
+
+.MainDiv {
+    padding: 25px;
+}
+
+.FormHead {
+    background-color: #212532 !important;
+    border: 2px solid #0fa942;
+}

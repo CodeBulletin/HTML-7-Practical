@@ -1,0 +1,29 @@
+@import "UI.css";
+@import "Form.css";
+
+body {
+    padding: 25px;
+}
+
+.nav-tabs .nav-link.active {
+    border-top: 2px solid #0D9737;
+    border-right: 2px solid #0D9737;
+    border-left: 2px solid #0D9737;
+    border-bottom: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 3px solid #909090;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    border-top: 1px solid #707070;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+    border-bottom: 0px;
+}
+
+a.active.nav-link {
+    background-color: #212532 !important;
+    color: #ffffff !important;
+}

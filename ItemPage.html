@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- HTML meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Icon -->
+        <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="./CSS/ItemPage.css">
+
+        <title>Book Mania "One-Punch Man, Vol. 23"</title>
+
+        <script defer>
+            function click(loc) {
+                console.log(loc);
+                location.href = loc;
+            }
+        </script>
+    </head>
+    <body>
+
+        <!-- Navbar --> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand font_style" href="./HomePage.html?type=ALL">Book Mania</a>
+                <form class="form-dark" method="GET" action="./HomePage.html">
+                    <input type="text" placeholder="Search" class="form-control dark font_style" id="search" name="search">
+                </form>
+                <div class="" id="Books">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font_style" href="#" role="button" data-bs-toggle="dropdown">Book Type</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
+                                <li><a class="dropdown-item nav-link font_style" href="./HomePage.html?type=ALL">All Books</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./HomePage.html?type=Fiction">Fiction</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./HomePage.html?type=NonFiction">Non Fiction</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./HomePage.html?type=Manga">Manga</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-auto" id="USER">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font_style" href="#" role="button" data-bs-toggle="dropdown">
+                                Bhavesh_Malhotra
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
+                                <li><a class="dropdown-item nav-link font_style" href="./Login.html">Login with other account</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./Cart.html">Cart</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./Orders.html">Orders</a></li>
+                                <li><a class="dropdown-item nav-link font_style" href="./Profile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class=FullScreen>
+            <div class="ItemGrid">
+                <div class="Head dark_col display-6 font_style">The Default Book</div>
+                <div class="Img dark_col">
+                    <img src=./Images/images.jpg alt=15000 class="IMAGE">
+                </div>
+                <div class="Desc dark_col">
+                    <span class="Major dark_col font_style">
+                        Author: Book Mania <br>
+                    </span>
+                    <span class="Major dark_col font_style">
+                        Seller: MyBookSeller <br>
+                    </span>
+                    <span class="Minor dark_col font_style">
+                        Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta inventore obcaecati soluta quo velit sed maxime corporis necessitatibus a! Soluta vel nobis dolores ipsum suscipit, saepe eos? Quia, veniam et recusandae libero qui rerum maiores blanditiis numquam dolore officia ut aut illum repellendus fugiat ipsa quam obcaecati, minima veritatis necessitatibus nostrum consectetur. Eligendi ad distinctio magnam officiis quasi, doloribus officia. Excepturi molestias sint quas magni culpa omnis neque laudantium, consectetur libero optio numquam adipisci modi dolor repudiandae, minus consequatur, mollitia totam aperiam doloremque? Eligendi quam hic temporibus nobis ipsum! Labore maiores at, eaque dolor incidunt cumque explicabo magni. Odit, reprehenderit. Quaerat tempore obcaecati vel impedit! Facilis doloremque eaque, iure dolor facere cupiditate non hic officia repudiandae nam minima quaerat suscipit sequi ipsam itaque sunt nulla nesciunt deleniti praesentium! Nam consectetur tempora aut. Exercitationem quo mollitia, ea sed suscipit veniam voluptates totam, vitae inventore explicabo doloribus veritatis? Autem esse atque qui in voluptatum beatae, fuga sequi animi reiciendis quo est asperiores quaerat ducimus alias! Placeat aut maiores voluptatem itaque, magni aperiam. Optio, beatae? Earum dolorum voluptatum recusandae inventore ipsa eligendi consectetur odit consequuntur expedita, magni distinctio, vero nostrum, impedit eveniet reiciendis. Quae voluptatum possimus amet ea, nesciunt ratione ullam laborum odio?<br>
+                    </span>
+                </div>
+                <div class="Price dark_col">
+                    <div class="row">
+                        <div class="col">
+                            <span class="Major dark_col font_style price">
+                                Price: ₹1000.00
+                            </span>
+                        </div>
+                        <div class="col">
+                            <form action="./Cart.html" method="post">
+                                <button class="button" type="submit">
+                                    Add to Cart
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
